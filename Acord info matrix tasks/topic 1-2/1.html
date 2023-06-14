@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = parseInt(prompt("Enter 1st number: "));
+      var b = parseInt(prompt("Enter 2nd number: "));
+
+      document.write(`<h4>Before swapping first=${a} second=${b}</h4>`)
+
+      var temp;
+      temp = a;
+      a = b;
+      b = temp;
+
+      document.write(`<h4>After swapping first=${a} second=${b}</h4>`)
+
+    </script>
+  </body>
+</html>
