@@ -78,7 +78,7 @@ const sortStudents = (students) => {
       return b.biology - a.biology;
     }
   });
-  return students.map((student) => student.name.split(" ")[0]);
+  return students.map((student) => student.name.split(" ")[0].toLowerCase());
 };
 
 console.log(sortStudents(testCase1));
