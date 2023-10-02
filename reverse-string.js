@@ -1,5 +1,3 @@
-let string = "Jayakanth";
-
 // with built in methods
 let reverseString = (input) => {
   input = input.split("");
@@ -8,15 +6,16 @@ let reverseString = (input) => {
   return input;
 };
 
-console.log(reverseString(string));
+console.log(reverseString("Welcome"));
 
 // without built in methods
-function reverse1(str) {
-  let r = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    r += str[i];
+
+function reverseString2(str){
+  let finalString ="";
+  for(let i= str.length; i>=0; i--){
+    finalString += str.charAt(i)
   }
-  return r;
+  return finalString
 }
 
-console.log(reverse1("javascript"));
+console.log(reverseString2("welcome to javascript"))
